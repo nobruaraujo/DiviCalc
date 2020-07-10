@@ -44,8 +44,8 @@ $(document).ready(function () {
 
 document.getElementById('btn-simulacao').addEventListener('click', function (event) {
 
-    console.log(document.getElementById('acaotxt').value)
-    console.log(document.getElementById('apotxt').value)
+    // console.log(document.getElementById('acaotxt').value)
+    // console.log(document.getElementById('apotxt').value)
     // 1 - DECLARAÇÃO DAS VARIÁVEIS HTML/JS
 
 
@@ -223,35 +223,35 @@ document.getElementById('btn-simulacao').addEventListener('click', function (eve
         var tdd2 = document.createElement('TD')
         var tdd3 = document.createElement('TD')
         var tdd4 = document.createElement('TD')
-
+        
         // 2- ATRIBUINDO VALOR
         var text1 = document.createTextNode(array[i].ano)
         var text2 = document.createTextNode(array[i].rendaAnual)
         var text3 = document.createTextNode(array[i].rendaMensal)
         var text4 = document.createTextNode(array[i].patrimonio)
-
+        
         // 3- CRIANDO UMA TR
         var trrResultado = document.createElement('TR')
-
+        
         // 4- LINKANDO O TEXTO DENTRO DA TD
         tdd1.appendChild(text1) // COLOCANDO VALOR DENTRO DA TD
         trrResultado.appendChild(tdd1) // COLOCANDO TD DENTRO DA TR
-
+        
         tdd2.appendChild(text2)
         trrResultado.appendChild(tdd2)
-
+        
         tdd3.appendChild(text3)
         trrResultado.appendChild(tdd3)
-
+        
         tdd4.appendChild(text4)
         trrResultado.appendChild(tdd4)
-
-
+        
+        
         // 5- COLOCANDO A TR DENTRO DA TBODY
         document.getElementById('tbody-table-empresa').appendChild(trrEmpresa)
         document.getElementById('tbody-table-resultado').appendChild(trrResultado)
-
-
+        
+        
         // Tratamento de dados | omitindo inputs não usados da DataTable
         document.getElementById('table_id_empresa_length').style.display = "none"
         document.getElementById('table_id_empresa_filter').style.display = "none"
