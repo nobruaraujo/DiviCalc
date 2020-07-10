@@ -1,0 +1,361 @@
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background: url(../images/background4.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.navbar-brand img {
+    margin-left: 10px;
+    width: 70px;
+    transition: all 1s ease;
+}
+.navbar-brand img:hover {
+    transform: scale(1.2);
+}
+.menu {
+    width: 100vw;
+    background:url(../images/bg.jpg);
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 2;
+}
+thead{
+    background-color: #FFD553
+}
+.row {
+    margin: 0 0 0 0;
+}
+.nav-link {
+    color: #000;
+    transition: all 1s ease;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+    font-size: 18px;
+}
+.nav-link:hover {
+    color: #5b5f63;
+    background: #fde497;
+    border-radius: 20px;
+    border-top: dotted 1px #5b5f63;
+    border-bottom:dotted 1px #5b5f63;
+}
+.menu-sm {
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    background-color: #FFD553;
+    display: none;
+    position: fixed;
+    z-index: 999;
+    justify-content: space-around;
+    bottom:0;
+    left:0;
+}
+.menu-sm a{
+    color: #000;
+}
+.menu-sm img{
+    width: 40px;
+}
+
+.content {
+    text-align: center;
+    padding-top: 70px;
+}
+.content h1,h2{
+    color:#FFB800;
+    font-family: 'Amatic SC', cursive;
+    font-size: 32px;
+}
+.sobre h3 {
+    color:#FFB800;
+    font-size: 18px;
+}
+.content p {
+    color: #fff;
+    text-align: justify;
+}
+.sobre p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.dividendos {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.dividendos img {
+    width: 350px;
+    border-radius: 50%;
+    margin-bottom: 70px;
+    border: solid 4px #fff;
+}
+.dividendos p {
+    padding-left: 100px;
+}
+.dividendos h3 {
+    color: #FFB800;
+    font-size: 18px;
+    padding-left: 70px;
+    margin-bottom: 40px;
+}
+
+.simule {
+    color: #fff;
+}
+.simule h3{
+    font-size: 20px;
+    color: #FFB800;
+}
+.form {
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    border-radius: 30px;
+}
+
+#qntxt{
+    width: 230px;
+}
+.form-control {
+    width: 170px;    
+    height: 30px;
+}
+.papel {
+    display: inline-flex;
+    align-self: center;
+}
+.squad {
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+.btn-simule{
+    background-color: #FFD553;
+    border: none;
+    border-radius: 20px;
+    width: 90px;
+    transition: all 1s ease-in-out;
+    font-weight: bold;
+}
+.btn-simule:hover{
+    background-color: #FFB800;
+}
+
+#btn-leiaMais{
+    background-color: #FFD553;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    transition: all 1s ease-in-out;
+    font-weight: bold;
+}
+#btn-leiaMais:hover{
+    background-color: #FFB800;
+}
+
+.equipe{
+    padding: 30px 0 40px;
+    background: rgba(0,0,0,0.6);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 40px;
+}
+.equipe .foto{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+.equipe .foto:before{
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background: #FFD553;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+}
+.equipe:hover .foto:before{
+    height: 100%;
+}
+.equipe .foto:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.equipe .foto img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+}
+.equipe:hover .foto img{
+    box-shadow: 0 0 0 14px #fff;
+    transform: scale(0.7);
+}
+.equipe-content{
+    margin-bottom: 30px;
+}
+.equipe .titulo{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.equipe .contatos{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #FFD553;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+.equipe:hover .contatos{
+    bottom: 0;
+}
+.equipe .contatos li {
+    display: inline-block;
+    color: #FFB800;
+    padding: 10px 20px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+.equipe .contatos li:hover {
+    color: #FFB800;
+    text-decoration: none;
+    cursor: pointer;
+}
+.equipe .contatos li a {
+    color: #000;
+}
+.equipe .contatos li a:hover {
+    color: #45494E;
+}
+.divi-img-sm {
+    display:none;
+}
+.icone-info {
+    margin-left: 10px;
+}
+.mais {
+    display: none;
+}
+.mais-img {
+    display:none;
+}
+#anotxt{
+    width: 230px;
+}
+
+#resultado, #empresa {
+    display: none;
+}
+
+#table_id_resultado, #table_id_empresa {
+    background-color: #45494E;
+    color: black;
+    margin-top: 20px;
+}    
+
+.qualquer{
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+#table_id_resultado{
+    width: 45vw;
+}
+
+#table_id_empresa{
+    width: 35vw;
+}
+
+
+footer {
+    background-color: #000;
+    height: 50px;
+}
+footer p {
+    color: #fff;
+    align-self: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+@media (max-width: 500px){
+    body{
+        background: url(../images/background.jpg);
+        background-size: auto;
+    }
+    #acaotxt{
+        width: 180px;
+    }
+    #qntxt{
+        width: 130px;
+    }
+    #anostxt{
+        width: 175px;
+    }
+    #table_id_resultado{
+        width: 45vw;
+        margin-bottom: 20px;
+    }
+    .menu {
+        display:none;
+    }
+    .menu-sm {
+        display: inline-flex;
+    }
+    footer {
+        display: none;
+    }
+    .content {
+        padding:0;
+    }
+    .content img {
+        width: 200px;
+    }
+    .divi-img {
+        display: none;
+    }
+    .dividendos p {
+        padding-left: 0;
+    }
+    .dividendos h3 {
+        padding-left: 0;
+        margin-bottom: 40px;
+    }
+    .divi-img-sm{
+        display: inline;
+    }
+    .divi-img-sm img {
+        border-radius: 50%;
+        border: 3px solid #fff;
+    }
+}
+
